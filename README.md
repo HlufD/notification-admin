@@ -49,3 +49,4 @@ The dev server forwards `/v1.0/...` to the backend (`NOTIFICATION_API_TARGET`, d
 Everything the backend doesn't support was removed rather than faked: Audit Logs, Channel Rules, environment/version badge, user profile and notification bell (no authentication yet), languages/locales, "Send test SMS", "Validate all", "Register service", "Export report", deleting templates (there is no delete: rewrite or switch off), push channel, channel fallback, maker-checker approval, compliance banners, contract IDs and sample payload panels, and coverage numbers that would need data the API doesn't return.
 
 The preview, SMS length and checks are always the server's own (`POST …/preview`), so what the admin sees is exactly what the backend accepts and sends.
+# notification-admin
