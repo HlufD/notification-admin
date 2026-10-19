@@ -1,4 +1,4 @@
-/** Design tokens from the Dashen Bank Operations Console design (DESIGN.md). */
+/** Design tokens from the Ex Bank Operations Console design (DESIGN.md). */
 export default {
   content: ["./index.html", "./src/**/*.{ts,tsx}"],
   theme: {

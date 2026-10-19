@@ -1,6 +1,6 @@
 # Notification Templates admin UI
 
-The operations console for the Notification Template Service: browse namespaces, services and events, write and preview templates, and manage snippets. Built from the "Dashen Bank Operations Console" design with React, Vite, TypeScript and Tailwind.
+The operations console for the Notification Template Service: browse namespaces, services and events, write and preview templates, and manage snippets. Built from the "Ex Bank Operations Console" design with React, Vite, TypeScript and Tailwind.
 
 ## Demo mode (default)
 

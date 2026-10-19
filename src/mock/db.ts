@@ -40,7 +40,7 @@ const services: DbService[] = [
     namespace: "payments",
     code: "FUND_TRANSFER",
     name: "Fund Transfer",
-    description: "Transfers between Dashen accounts and to other banks.",
+    description: "Transfers between Ex Bank accounts and to other banks.",
     active: true,
     events: [
       {
@@ -135,7 +135,7 @@ const services: DbService[] = [
     namespace: "wallet",
     code: "CASH_OUT",
     name: "Agent Cash-out",
-    description: "Withdrawals at Dashen agents.",
+    description: "Withdrawals at Ex Bank agents.",
     active: false,
     events: [
       {
@@ -221,7 +221,7 @@ const snippetSeed: Array<[string, string, string, number]> = [
   [
     "signature",
     "Closing line used in emails.",
-    "Thank you for banking with Dashen Bank.",
+    "Thank you for banking with Ex Bank.",
     60 * 24 * 12,
   ],
   ["helpline", "Call-centre line.", "For help, call 6333 (free).", 60 * 24 * 9],
@@ -312,7 +312,7 @@ const templateSeed: Seed[] = [
     "customer",
     "sms",
     undefined,
-    "Your Dashen verification code is {{otp}}. It expires in {{validMinutes}} minutes. Never share it with anyone.",
+    "Your Ex Bank verification code is {{otp}}. It expires in {{validMinutes}} minutes. Never share it with anyone.",
     true,
     60 * 24 * 20,
   ],
@@ -321,7 +321,7 @@ const templateSeed: Seed[] = [
     "NEW_DEVICE_LOGIN",
     "customer",
     "email",
-    "New sign-in to your Dashen account",
+    "New sign-in to your Ex Bank account",
     "Dear {{customerName}},\n\nYour account was signed in on {{device}}{{#if location}} near {{location}}{{/if}} at {{loggedInAt}}.\n\n{{> notYou}}\n\n{{> signature}}",
     true,
     60 * 24 * 2,

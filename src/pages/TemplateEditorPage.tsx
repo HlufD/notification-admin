@@ -867,7 +867,7 @@ function PreviewFrame({
             <div className="border-b border-outline-variant/40 pb-2">
               <span className="text-caption uppercase text-on-surface-variant">Subject</span>
               <p className="text-headline-sm">{rendered.subject}</p>
-              <span className="text-[11px] text-on-surface-variant">From Dashen Bank · {time}</span>
+              <span className="text-[11px] text-on-surface-variant">From Ex Bank · {time}</span>
             </div>
             <p className="whitespace-pre-wrap break-words text-body-md">{rendered.body}</p>
           </div>
@@ -895,7 +895,7 @@ function PreviewFrame({
               <div className="flex h-7 w-7 items-center justify-center rounded-full bg-primary text-[11px] font-bold text-on-primary">
                 D
               </div>
-              <span className="text-[12px] font-semibold">DashenBank</span>
+              <span className="text-[12px] font-semibold">Ex Bank</span>
             </div>
             <div className="my-3 flex justify-center">
               <span className="rounded-full bg-surface-container-high/80 px-2.5 py-0.5 font-mono text-[10px] text-on-surface-variant">
@@ -917,7 +917,7 @@ function PreviewFrame({
         ) : (
           <div className="flex flex-1 flex-col gap-3 p-3 pt-6">
             <span className="text-center text-[11px] font-semibold uppercase tracking-wider text-on-surface-variant">
-              Dashen SuperApp · Notifications
+              Ex Bank SuperApp · Notifications
             </span>
             <div className="flex gap-2.5 rounded-xl bg-white p-3 shadow-sm">
               <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-primary text-[12px] font-bold text-on-primary">

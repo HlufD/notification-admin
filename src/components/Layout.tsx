@@ -192,7 +192,7 @@ export function Layout(): ReactNode {
               </div>
               <div className="flex flex-col leading-tight">
                 <span className="text-[13px] font-bold tracking-tight text-primary">
-                  Dashen Bank
+                  Ex Bank
                 </span>
                 <span className="text-[9px] uppercase tracking-wider text-on-surface-variant">
                   SuperApp Console
