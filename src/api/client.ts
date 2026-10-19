@@ -19,6 +19,15 @@ import type {
 
 const BASE = (import.meta.env.VITE_API_BASE as string | undefined) ?? "/v1.0/notification";
 
+/** Mock API with an in-memory database (default). Set VITE_USE_MOCK=false to call the real service. */
+const USE_MOCK = import.meta.env.VITE_USE_MOCK !== "false";
+
+const send = async (path: string, init: RequestInit): Promise<Response> => {
+  if (!USE_MOCK) return fetch(`${BASE}${path}`, init);
+  const { mockFetch } = await import("../mock/server");
+  return mockFetch(path, init);
+};
+
 /** Thrown for every failed call; `error` is the API's `{ code, message, errors? }`. */
 export class ApiRequestError extends Error {
   constructor(
@@ -41,7 +50,7 @@ async function request<T>(
 ): Promise<T> {
   let res: Response;
   try {
-    res = await fetch(`${BASE}${path}`, {
+    res = await send(path, {
       method,
       headers: body === undefined ? undefined : { "Content-Type": "application/json" },
       body: body === undefined ? undefined : JSON.stringify(body),

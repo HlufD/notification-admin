@@ -2,6 +2,12 @@
 
 The operations console for the Notification Template Service: browse namespaces, services and events, write and preview templates, and manage snippets. Built from the "Dashen Bank Operations Console" design with React, Vite, TypeScript and Tailwind.
 
+## Demo mode (default)
+
+Out of the box the UI runs against a mock API with an in-memory database (`src/mock/`), so it works without the backend: `npm run build` and deploy `dist/` to any static host. The mock checks, renders and saves templates and snippets like the real service, using seeded sample data. Changes last until the page is reloaded. For the SPA routes, `public/_redirects` (Netlify) and `vercel.json` (Vercel) send every path to `index.html`.
+
+To use the real service, set `VITE_USE_MOCK=false` (see below and `.env.example`).
+
 ## Run
 
 The backend is a separate repository: `superapp-notification-template` (the Notification Template Service).
